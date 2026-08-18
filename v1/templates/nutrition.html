@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jonathan Lam's Portfolio Website</title>
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+    <body>
+        <div class="navButtonContainer">
+            <img id="navButton" src="../static/images/menu.png" onclick="toggleMenu()">
+            <div id="menuContainer">
+                <a href="../index.html">Home</a>
+                <a href="pomodoro.html">Pomodoro Browser Extension (in-progress)</a>
+                <a href="nutrition.html">Nothing but Nutrition</a>
+                <a href="ASCII.html">Image to ASCII Art</a>
+                <a href="wordle.html">Wordle</a>
+            </div>
+        </div> 
+        <div class="container">
+            <header>Jonathan Lam</header>
+            <hr />
+            <div class="project">
+                <div class="projectTextContainer">
+                    <h1 class="title">Nothing but Nutrition! 🍎</h1>
+                    <p>
+                        Nothing but Nutrition is a Flask web application designed to help users gain informative nutritional data about their foods.
+                        Through the OpenFoodFacts API and libraries such as OpenCV and Pyzbar, users scan UPC barcodes with their camera and receive clear,
+                        organized information in return.
+                    </p>
+                    <p>
+                        This project was inspired by my interest in health and learning more about APIs.
+                        As my first experience with them, I gained valuable knowledge in server requests and handling JSON data,
+                        as well as familiarizing myself with new libraries.
+                    </p>
+                </div>
+                <div class="projectDemoContainer">
+                    <video id="nbnDemoVid" src="../static/images/nbnDemoVid.mp4" type="video/mp4" alt="Nothing But Nutrition Video Demonstration" muted controls>
+                </div>
+                <div class="caption">
+                    <p>Check out the source code <a href="https://github.com/Jonuhthan/nutrition-tracker-app" class="pLink">here</a>.</p>
+                </div>
+            </div>
+            <hr />
+            <footer>
+                <div class="footerContainer">
+                    <div class="footerItem">
+                        <p id="footerName">Jonathan Lam</p>
+                        <a href="mailto:jonhaolam@gmail.com" id="email">jonhaolam@gmail.com</a></p>
+                    </div>
+                    <div class="footerItem">
+                        <a href="https://www.linkedin.com/in/jonathanlam2/"><img class="socials" src="../static/images/linkedin.png" alt="Jonathan Lam's LinkedIn"></a>
+                        <a href="https://github.com/Jonuhthan"><img class="socials" src="../static/images/github.png" alt="Jonathan Lam's GitHub"></a>    
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="../static/script.js"></script> 
+    </body>
+</html>

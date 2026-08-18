@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jonathan Lam's Portfolio Website</title>
+        <link rel="stylesheet" href="../static/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <div class="navButtonContainer">
+            <img id="navButton" src="../static/images/menu.png" onclick="toggleMenu()">
+            <div id="menuContainer">
+                <a href="../index.html">Home</a>
+                <a href="pomodoro.html">Pomodoro Browser Extension (in-progress)</a>
+                <a href="nutrition.html">Nothing but Nutrition</a>
+                <a href="ASCII.html">Image to ASCII Art</a>
+                <a href="wordle.html">Wordle</a>
+            </div>
+        </div> 
+        <div class="container">
+            <header>Jonathan Lam</header>
+            <hr />
+            <div class="projectTextContainer">
+                <h1 class="title">Image to ASCII Art 🎨</h1>
+                <p>
+                    This program creates command line ASCII art out of sample images. It works by feeding in a photo and extracting the RGB values of each individual pixel,
+                    storing them in a 2-D array representation of the image. These values are then fed through a brightness scale that determines which ASCII character will
+                    be used to represent this pixel. Bolder characters such as the "$" or "@" have a greater brightness than "'" or ",". With the 2-D array replaced with ASCII
+                    characters, all that's left is to reconstruct them to the terminal in the same order they came in.
+                </p>
+            </div>
+            
+            <div class="sourceCodeContainer">
+                <pre><code class="python">from PIL import Image
+
+# Length of 65
+ascii = '`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$'
+
+# Allow customization of image art
+stretch_factor = 4
+scale = 0.2
+file = 'asciiArt\dog.jpg'
+
+def get_matrix(img):
+    '''Gets 2-D array from loaded image'''
+    img = img.resize((int(img.width * scale), int(img.height * scale)))
+    pixels = list(img.getdata())
+    # List casting, then generate 2-D array
+    # Inner list consists of splices of pixels array that will make up each row 
+    return [pixels[i * img.width:(i + 1) * img.width] for i in range(img.height)]
+
+
+def brightness_scale(pixels):
+    '''Converts 2-D array of pixels in RGB scale to brightness scale by averaging RGB values'''
+    for i in range(len(pixels)):
+        for j in range(len(pixels[i])):
+            # Iterate through every pixel, then average the RGB values and return the whole thing
+            pixels[i][j] = sum(pixels[i][j]) / 3
+    return pixels
+
+
+def ascii_convert(pixels):
+    '''Mutates 2-D array of pixels into ascii characters, assumes each pixel has one value on the BRIGHTNESS scale (NOT tuple with RGB values)'''
+    for i in range(len(pixels)):
+        for j in range(len(pixels[i])):
+            # Look at every pixel and change brightness values to ascii character
+            # Max possible value for brightness is 255, and must subract 1 because indexing starts at 0
+            pixels[i][j] = ascii[int(pixels[i][j] * len(ascii)/255) - 1]
+    return pixels
+
+
+def print_ascii_matrix(ascii_matrix):
+    '''prints the contents of each row'''
+    for row in ascii_matrix:
+        # Temporary list line that contains len(row) * stretch_factor elements
+        line = [p * stretch_factor for p in row]
+        # List is then joined together to form continuous string representing one row
+        print("".join(line))
+
+# Open image, convert to 2-D array, give each value a brightness value, match the corresponding ASCII character, print ASCII 2-D array
+img = Image.open(file)
+pixels = get_matrix(img)
+bright_matrix = brightness_scale(pixels)
+ascii_conversion = ascii_convert(bright_matrix)
+print_ascii_matrix(ascii_conversion)</code></pre>
+            </div>
+            <div class="projectDemoContainer">
+                <img src="../static/images/dog.png" alt="dog">
+                <img src="../static/images/dogASCII.png" alt="ASCII representation of dog">
+            </div>
+            <div class="caption">
+                <p>Side-by-side comparison of the original image and the ASCII version.</p>
+            </div>
+            <hr />
+            <footer>
+                <div class="footerContainer">
+                    <div class="footerItem">
+                        <p id="footerName">Jonathan Lam</p>
+                        <a href="mailto:jonhaolam@gmail.com" id="email">jonhaolam@gmail.com</a></p>
+                    </div>
+                    <div class="footerItem">
+                        <a href="https://www.linkedin.com/in/jonathanlam2/"><img class="socials" src="../static/images/linkedin.png" alt="Jonathan Lam's LinkedIn"></a>
+                        <a href="https://github.com/Jonuhthan"><img class="socials" src="../static/images/github.png" alt="Jonathan Lam's GitHub"></a>    
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="../static/script.js"></script> 
+    </body>
+</html>

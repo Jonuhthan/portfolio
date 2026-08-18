@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jonathan Lam's Portfolio Website</title>
+        <link rel="stylesheet" href="../static/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <div class="navButtonContainer">
+            <img id="navButton" src="../static/images/menu.png" onclick="toggleMenu()">
+            <div id="menuContainer">
+                <a href="../index.html">Home</a>
+                <a href="pomodoro.html">Pomodoro Browser Extension (in-progress)</a>
+                <a href="nutrition.html">Nothing but Nutrition</a>
+                <a href="ASCII.html">Image to ASCII Art</a>
+                <a href="wordle.html">Wordle</a>
+            </div>
+        </div> 
+        <div class="container">
+            <header>Jonathan Lam</header>
+            <hr />
+            <div class="project">
+                <div class="projectTextContainer">
+                    <h1 class="title">Wordle Imitation 🔎</h1>
+                    <p>
+                        Since its release in 2021, Wordle has been a part of my daily routine. Still learning Python at the time, I decided to combine my two interests
+                        and create my own little representation of the game. This project works by outsourcing two CSV files, a word bank and a list of valid words,
+                        and getting user input. Players are prompted six times to guess a 5-letter word, receiving colored hints about the orientation of the
+                        letters. The program checks for the frequencies of each letter and highlights their status accordingly. 
+                    </p>
+                </div>
+                <div class="sourceCodeContainer">
+                    <pre><code class="python">import csv
+import random
+from termcolor import cprint
+
+# Generates list of valid words
+valid_words = []
+with open("valid-words.csv") as f2:
+    for row in f2.readlines():
+        valid_words.append(row.strip())
+
+def main():
+    rounds = 0
+    match = False
+    answer = pick_word()
+
+    while rounds < 6 and not match:
+        # Checking for valid input
+        while True:
+            guess = input("Enter a 5-letter word: ").lower()
+            if guess in valid_words:
+                break
+        print("\t\t\t\t     ", end="")
+        # Ends game but still allows word to be printed
+        if guess == answer:
+            match = True
+        # Handles cases, green if letter and positon match, yellow if it's in the answer, white if none
+        frequency = []
+        for i in range(5):
+            frequency.append(guess.count(guess[i]))
+
+        # Count checks for duplicate chars and formats them properly
+        count = 0
+        for i in range(5):
+            if guess[i] == answer[i]:
+                if frequency[i] == 1:
+                    cprint(" " + guess[i].upper() + " ", "white", "on_green", end="  ")
+                elif count > (answer.count(guess[i]) - 1):
+                    cprint(" " + guess[i].upper() + " ", "white", "on_dark_grey", end="  ")
+                elif frequency[i] > 1:
+                    cprint(" " + guess[i].upper() + " ", "white", "on_green", end="  ")
+                    count += 1
+            elif guess[i] in answer:
+                if frequency[i] == 1:
+                    cprint(" " + guess[i].upper() + " ", "white", "on_yellow", end="  ")
+                elif count > (answer.count(guess[i]) - 1):
+                    cprint(" " + guess[i].upper() + " ", "white", "on_dark_grey", end="  ")
+                elif frequency[i] > 1:
+                    cprint(" " + guess[i].upper() + " ", "white", "on_yellow", end="  ")
+                    count += 1
+            else:
+                cprint(" " + guess[i].upper() + " ", "white", "on_dark_grey", end="  ")
+
+        print()
+        rounds += 1
+
+    print()
+    print()
+    # Ends game
+    if match:
+        print(f"You won! You guessed the word \"{answer}\" in {rounds} tries.")
+    else:
+        print(f"Sorry, but the word was {answer}. Good luck next time!")
+
+
+def pick_word():
+    '''Generates random word from word bank'''
+    word_bank = []
+    with open("word-bank.csv") as f:
+        for row in f.readlines():
+            word_bank.append(row.strip())
+        return random.choice(word_bank)
+
+if __name__ == "__main__":
+    main()</code></pre>
+                </div>
+            </div>
+            <div class="projectDemoContainer">
+                <img id="wordleDemo" src="../static/images/wordle.png">
+            </div>
+            <div class="caption">
+                <p>Command line simulation of the game.</p>
+            </div>
+            <hr />
+            <footer>
+                <div class="footerContainer">
+                    <div class="footerItem">
+                        <p id="footerName">Jonathan Lam</p>
+                        <a href="mailto:jonhaolam@gmail.com" id="email">jonhaolam@gmail.com</a></p>
+                    </div>
+                    <div class="footerItem">
+                        <a href="https://www.linkedin.com/in/jonathanlam2/"><img class="socials" src="../static/images/linkedin.png" alt="Jonathan Lam's LinkedIn"></a>
+                        <a href="https://github.com/Jonuhthan"><img class="socials" src="../static/images/github.png" alt="Jonathan Lam's GitHub"></a>    
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="../static/script.js"></script>
+    </body>
+</html>
