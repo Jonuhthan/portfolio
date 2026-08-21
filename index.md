@@ -16,3 +16,13 @@ title: Jonathan Lam
         </p>
     </div>
 </section>
+
+<section class="currently">
+    <h2>Currently:</h2>
+    <ul>
+        <li>Software Engineer Intern at Capital One</li>
+        <li>Researching and developing software for <a href="https://floodwatch.io/" target="_blank" rel="noopener">floodwatch.io</a> under Professor Rich Nguyen</li>
+        <li>Providing network/computing support for the UVA CS department</li>
+        <li>TAing for CS 3250: Software Testing</li>
+    </ul>
+</section>

@@ -4,19 +4,19 @@ title: Projects
 permalink: /projects/
 ---
 
-<div class="project-list">
+<ul class="other-projects">
 {% for project in site.data.projects %}
   {% if project.featured %}
   {% include project-card.html project=project %}
   {% endif %}
 {% endfor %}
-</div>
+</ul>
 
 <h2 class="section-heading">Older Projects</h2>
-<div class="project-list">
+<ul class="other-projects">
 {% for project in site.data.projects %}
   {% unless project.featured %}
   {% include project-card.html project=project %}
   {% endunless %}
 {% endfor %}
-</div>
+</ul>

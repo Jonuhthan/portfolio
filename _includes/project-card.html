@@ -1,16 +1,13 @@
-<article class="project-card">
-  <div class="project-card__body">
-    <div class="project-header">
-      <span class="project-name">{{ project.name }}</span>
-      {% if project.dates %}<span class="exp-dates">{{ project.dates }}</span>{% endif %}
-    </div>
-    {% if project.blurb %}<p class="exp-blurb">{{ project.blurb }}</p>{% endif %}
-    {% if project.stack %}<div class="project-stack">{{ project.stack }}</div>{% endif %}
-    {% if project.github or project.link %}
-    <div class="project-card__links">
-      {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener" aria-label="{{ project.name }} on GitHub">{% include icon.html name="github" %}</a>{% endif %}
-      {% if project.link %}<a href="{{ project.link }}" target="_blank" rel="noopener" aria-label="{{ project.name }} live site">{% include icon.html name="external" %}</a>{% endif %}
-    </div>
-    {% endif %}
+<li>
+  <div class="project-header">
+    <span class="project-name">{{ project.name }}</span>
+    {% if project.dates %}<span class="exp-dates">{{ project.dates }}</span>{% endif %}
   </div>
-</article>
+  {% if project.blurb %}<p class="exp-blurb">{{ project.blurb }}</p>{% endif %}
+  {% if project.stack %}<div class="project-stack">{{ project.stack }}</div>{% endif %}
+  {% if project.github %}
+  <div class="project-card__links">
+    <a href="{{ project.github }}" target="_blank" rel="noopener" aria-label="{{ project.name }} on GitHub">{% include icon.html name="github" %}</a>
+  </div>
+  {% endif %}
+</li>
