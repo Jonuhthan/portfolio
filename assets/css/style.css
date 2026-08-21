@@ -33,10 +33,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 .wrap {
     max-width: 800px;
     margin: 0 auto;
@@ -202,12 +198,20 @@ main.wrap {
     font-size: 0.9rem;
 }
 
+.exp-org-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 .exp-org {
     color: var(--color-muted);
     font-size: 0.95rem;
 }
 
 .exp-location {
+    color: var(--color-muted);
     font-size: 0.9rem;
 }
 
