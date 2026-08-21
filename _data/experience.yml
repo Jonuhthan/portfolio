@@ -1,39 +1,31 @@
 - title: Computing Support Intern
   org: University of Virginia Computer Science Department
-  slug: uva-computing-support
   dates: Sept 2024 – Present
   location: Charlottesville, VA
   blurb: Network device configuration/installation for UVA CS department professors and graduate students
   stack: Bash · Apptainer · Linux
   org_url: https://www.cs.virginia.edu/
-  page: false
 
 - title: Software Engineer Intern
   org: Capital One
-  slug: capital-one-nyc-2026
   dates: June 2026 – August 2026
   location: New York, NY
   blurb: Full-stack decision dispute engine for corporate agentic AI governance within Cyber IAM
   stack:
   org_url: https://www.capitalone.com/
-  page: false
 
 - title: Software Engineer Intern
   org: Capital One
-  slug: capital-one-mclean-2025
   dates: June 2025 – August 2025
   location: McLean, VA
   blurb: Full-stack labor data portal automating HR spreadsheet workflows within the Card Tech organization
   stack: PostgreSQL · Snowflake · Tableau · Jenkins
   org_url: https://www.capitalone.com/
-  page: false
 
 - title: Software Testing Intern
   org: MicroAutomation
-  slug: microautomation
   dates: May 2024 – August 2024
   location: Centreville, VA
   blurb: Manual regression testing and software documentation maintenance for the OMNI-911 call taker software
   stack: Wireshark
   org_url: https://microautomation.com/
-  page: false

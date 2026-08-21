@@ -117,7 +117,8 @@ a {
     padding-bottom: 3rem;
 }
 
-.page-title {
+.page-title,
+.hero-text h1 {
     margin-top: 0;
 }
 
@@ -136,10 +137,6 @@ a {
     object-fit: cover;
     border-radius: 12px;
     flex-shrink: 0;
-}
-
-.hero-text h1 {
-    margin-top: 0;
 }
 
 /* currently (home page) */
@@ -187,11 +184,15 @@ a {
     border-bottom: none;
 }
 
-.project-header {
+.project-header,
+.exp-org-row {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     gap: 1rem;
+}
+
+.project-header {
     flex-wrap: wrap;
 }
 
@@ -202,13 +203,6 @@ a {
 .exp-dates {
     color: var(--color-muted);
     font-size: 0.9rem;
-}
-
-.exp-org-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
 }
 
 .exp-org {
