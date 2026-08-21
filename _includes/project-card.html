@@ -8,8 +8,8 @@
     <p>{{ project.description }}</p>
     {% if project.github or project.link %}
     <div class="project-card__links">
-      {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
-      {% if project.link %}<a href="{{ project.link }}" target="_blank" rel="noopener">Live</a>{% endif %}
+      {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener" aria-label="{{ project.name }} on GitHub">{% include icon.html name="github" %}</a>{% endif %}
+      {% if project.link %}<a href="{{ project.link }}" target="_blank" rel="noopener" aria-label="{{ project.name }} live site">{% include icon.html name="external" %}</a>{% endif %}
     </div>
     {% endif %}
   </div>

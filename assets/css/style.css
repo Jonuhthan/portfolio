@@ -22,7 +22,7 @@
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background: var(--color-bg);
     color: var(--color-text);
     line-height: 1.6;
@@ -45,10 +45,6 @@ a:hover {
 }
 
 /* header */
-
-.site-header {
-    border-bottom: 1px solid var(--color-border);
-}
 
 .site-header .wrap {
     display: flex;
@@ -228,6 +224,21 @@ main.wrap {
 .social-links {
     display: flex;
     gap: 1rem;
+}
+
+.social-links a,
+.project-card__links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-muted);
+    text-decoration: none;
+}
+
+.social-links a:hover,
+.project-card__links a:hover {
+    color: var(--color-accent);
+    text-decoration: none;
 }
 
 .copyright {
