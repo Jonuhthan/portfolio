@@ -10,9 +10,9 @@ title: Jonathan Lam
             I'm a passionate computer science student interested in software engineering,
             data science, and cloud computing. I love building applications to solve
             real-world problems that improve our daily lives. Feel free to explore my
-            <a href="{{ '/experiences.html' | relative_url }}">experiences</a> and
-            <a href="{{ '/projects.html' | relative_url }}">projects</a>, or read more
-            <a href="{{ '/about.html' | relative_url }}">about me</a>.
+            <a href="{{ '/experience/' | relative_url }}">experience</a> and
+            <a href="{{ '/projects/' | relative_url }}">projects</a>, or read more
+            <a href="{{ '/about/' | relative_url }}">about me</a>.
         </p>
     </div>
 </section>
