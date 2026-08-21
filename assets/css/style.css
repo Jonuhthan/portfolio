@@ -122,9 +122,8 @@ main.wrap {
     margin-top: 0;
 }
 
-/* experience & project cards */
+/* project cards */
 
-.experience-card,
 .project-card {
     display: flex;
     gap: 1.5rem;
@@ -133,12 +132,10 @@ main.wrap {
     flex-wrap: wrap;
 }
 
-.experience-card:last-child,
 .project-card:last-child {
     border-bottom: none;
 }
 
-.experience-card__image,
 .project-card__image {
     width: 140px;
     height: 100px;
@@ -148,13 +145,11 @@ main.wrap {
     flex-shrink: 0;
 }
 
-.experience-card__body h2,
 .project-card__body h2 {
     margin-top: 0;
     margin-bottom: 0.25rem;
 }
 
-.experience-card__meta,
 .project-card__meta {
     color: var(--color-muted);
     margin-top: 0;
@@ -171,6 +166,51 @@ main.wrap {
     margin-top: 2.5rem;
     border-top: 1px solid var(--color-border);
     padding-top: 1.5rem;
+}
+
+/* experience list */
+
+.other-projects {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.other-projects li {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.other-projects li:last-child {
+    border-bottom: none;
+}
+
+.project-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-name {
+    font-weight: 600;
+}
+
+.exp-dates {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+.exp-org {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+.project-stack {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
 }
 
 /* footer */
@@ -201,7 +241,6 @@ main.wrap {
         text-align: center;
     }
 
-    .experience-card,
     .project-card {
         flex-direction: column;
     }

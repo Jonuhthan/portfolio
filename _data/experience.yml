@@ -1,39 +1,31 @@
 - title: Computing Support Intern
-  company: University of Virginia Computer Science Department
-  location: Charlottesville, VA
-  date: September 2024 - Present
-  image: /assets/images/experience/uva_cs.png
-  bullets:
-    - Mounted, installed, and configured servers and network devices to support research and educational resources for 60+ faculty members and 200+ graduate students
-    - Developed Bash scripts to automate tasks such as monitoring GPU core temperatures and system status
-    - Built an Apptainer container to support GPU stress-test software and benchmarking within HPC environments
+  org: University of Virginia Computer Science Department
+  slug: uva-computing-support
+  dates: Sept 2024 – Present
+  stack: Bash · Apptainer · Linux
+  org_url: https://www.cs.virginia.edu/
+  page: false
 
 - title: Software Engineer Intern
-  company: Capital One
-  location: New York City, NY
-  date: June 2026 - August 2026
-  image: /assets/images/experience/capital_one.png
-  bullets:
-    - Engineered a full-stack decision dispute engine for dynamic agent requests as part of an enterprise-wide effort towards agentic governance
-    - Designed a 20-guardrail policy catalog with NIST AI RMF-aligned enforcement tiers as part of the dispute lifecycle
-    - Applied spec-driven development via LID methodology, generating 250+ EARS specs, enforcing HLD-to-code traceability with @spec annotations, and auditing repositories for spec-to-implementation drift
+  org: Capital One
+  slug: capital-one-nyc-2026
+  dates: June 2026 – August 2026
+  stack:
+  org_url: https://www.capitalone.com/
+  page: false
 
 - title: Software Engineer Intern
-  company: Capital One
-  location: McLean, VA
-  date: June 2025 - August 2025
-  image: /assets/images/experience/capital_one.png
-  bullets:
-    - Developed a full-stack labor data portal from concept to deployment, automating HR spreadsheet workflows and saving 5+ hours of manual data entry weekly across the Card Tech organization
-    - Implemented 15+ RESTful API endpoints to support database operations, trigger real-time notifications via Slack and Gmail, and integrate with a Jenkins-based CI/CD pipeline
-    - Synced a PostgreSQL RDS backend to a Snowflake view consumed by Tableau dashboards, enabling organization leadership to make data-driven labor decisions
+  org: Capital One
+  slug: capital-one-mclean-2025
+  dates: June 2025 – August 2025
+  stack: PostgreSQL · Snowflake · Tableau · Jenkins
+  org_url: https://www.capitalone.com/
+  page: false
 
 - title: Software Testing Intern
-  company: MicroAutomation
-  location: Centreville, VA
-  date: May 2024 - August 2024
-  image: /assets/images/experience/microautomation.png
-  bullets:
-    - Designed and tested 20+ manual server failover regression cases alongside developers for the OMNI-911 software
-    - Monitored network traffic with Wireshark to validate software features and reduce bandwidth usage by 7%
-    - Maintained existing test documentation in tandem with product managers to streamline SDLC transitions
+  org: MicroAutomation
+  slug: microautomation
+  dates: May 2024 – August 2024
+  stack: Wireshark
+  org_url: https://microautomation.com/
+  page: false
