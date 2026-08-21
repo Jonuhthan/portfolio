@@ -1,11 +1,16 @@
 <article class="project-card">
+  {% if project.image %}
   <img class="project-card__image" src="{{ project.image | relative_url }}" alt="{{ project.name }} screenshot" loading="lazy">
+  {% endif %}
   <div class="project-card__body">
     <h2>{{ project.name }}</h2>
+    {% if project.date %}<p class="project-card__meta">{{ project.date }}</p>{% endif %}
     <p>{{ project.description }}</p>
+    {% if project.github or project.link %}
     <div class="project-card__links">
-      <a href="{{ project.github }}" target="_blank" rel="noopener">GitHub</a>
-      <a href="{{ project.link }}" target="_blank" rel="noopener">Live / Repo</a>
+      {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if project.link %}<a href="{{ project.link }}" target="_blank" rel="noopener">Live</a>{% endif %}
     </div>
+    {% endif %}
   </div>
 </article>

@@ -167,6 +167,12 @@ main.wrap {
     margin-top: 0.5rem;
 }
 
+.section-heading {
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.5rem;
+}
+
 /* footer */
 
 .site-footer {

@@ -5,8 +5,18 @@
   image: /assets/images/experience/uva_cs.png
   bullets:
     - Mounted, installed, and configured servers and network devices to support research and educational resources for 60+ faculty members and 200+ graduate students
-    - Created and deployed bootable image drives of Ubuntu 22.04.5 LTS across 40+ desktops and servers
-    - Monitored IT support tickets in Jira, troubleshooting technical issues to provide efficient end-user support
+    - Developed Bash scripts to automate tasks such as monitoring GPU core temperatures and system status
+    - Built an Apptainer container to support GPU stress-test software and benchmarking within HPC environments
+
+- title: Software Engineer Intern
+  company: Capital One
+  location: New York City, NY
+  date: June 2026 - August 2026
+  image: /assets/images/experience/capital_one.png
+  bullets:
+    - Engineered a full-stack decision dispute engine for dynamic agent requests as part of an enterprise-wide effort towards agentic governance
+    - Designed a 20-guardrail policy catalog with NIST AI RMF-aligned enforcement tiers as part of the dispute lifecycle
+    - Applied spec-driven development via LID methodology, generating 250+ EARS specs, enforcing HLD-to-code traceability with @spec annotations, and auditing repositories for spec-to-implementation drift
 
 - title: Software Engineer Intern
   company: Capital One
@@ -14,9 +24,9 @@
   date: June 2025 - August 2025
   image: /assets/images/experience/capital_one.png
   bullets:
-    - Developed a full-stack labor data portal from concept to deployment, automating HR spreadsheet workflows and eliminating manual data entry errors within the Card Tech organization
+    - Developed a full-stack labor data portal from concept to deployment, automating HR spreadsheet workflows and saving 5+ hours of manual data entry weekly across the Card Tech organization
     - Implemented 15+ RESTful API endpoints to support database operations, trigger real-time notifications via Slack and Gmail, and integrate with a Jenkins-based CI/CD pipeline
-    - Synced a PostgreSQL RDS backend to Tableau executive dashboards, enabling organization leadership to make data-driven labor decisions
+    - Synced a PostgreSQL RDS backend to a Snowflake view consumed by Tableau dashboards, enabling organization leadership to make data-driven labor decisions
 
 - title: Software Testing Intern
   company: MicroAutomation
