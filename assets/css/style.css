@@ -153,26 +153,6 @@ main.wrap {
     border-bottom: none;
 }
 
-.project-card__image {
-    width: 140px;
-    height: 100px;
-    object-fit: contain;
-    background: var(--color-card-bg);
-    border-radius: 8px;
-    flex-shrink: 0;
-}
-
-.project-card__body h2 {
-    margin-top: 0;
-    margin-bottom: 0.25rem;
-}
-
-.project-card__meta {
-    color: var(--color-muted);
-    margin-top: 0;
-    font-size: 0.9rem;
-}
-
 .project-card__links {
     display: flex;
     gap: 1rem;
@@ -224,10 +204,17 @@ main.wrap {
     font-size: 0.95rem;
 }
 
+.exp-location {
+    font-size: 0.9rem;
+}
+
+.exp-blurb {
+    margin: 0.4rem 0 0;
+}
+
 .project-stack {
     color: var(--color-muted);
     font-size: 0.85rem;
-    margin-top: 0.25rem;
 }
 
 /* footer */

@@ -1,11 +1,11 @@
 <article class="project-card">
-  {% if project.image %}
-  <img class="project-card__image" src="{{ project.image | relative_url }}" alt="{{ project.name }} screenshot" loading="lazy">
-  {% endif %}
   <div class="project-card__body">
-    <h2>{{ project.name }}</h2>
-    {% if project.date %}<p class="project-card__meta">{{ project.date }}</p>{% endif %}
-    <p>{{ project.description }}</p>
+    <div class="project-header">
+      <span class="project-name">{{ project.name }}</span>
+      {% if project.dates %}<span class="exp-dates">{{ project.dates }}</span>{% endif %}
+    </div>
+    {% if project.blurb %}<p class="exp-blurb">{{ project.blurb }}</p>{% endif %}
+    {% if project.stack %}<div class="project-stack">{{ project.stack }}</div>{% endif %}
     {% if project.github or project.link %}
     <div class="project-card__links">
       {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener" aria-label="{{ project.name }} on GitHub">{% include icon.html name="github" %}</a>{% endif %}

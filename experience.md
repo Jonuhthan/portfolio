@@ -15,7 +15,9 @@ permalink: /experience/
     </div>
     <div class="exp-org">
       {% if exp.org_url %}<a href="{{ exp.org_url }}" target="_blank" rel="noopener">{{ exp.org }}</a>{% else %}{{ exp.org }}{% endif %}
+      {% if exp.location %}<span class="exp-location">· {{ exp.location }}</span>{% endif %}
     </div>
+    {% if exp.blurb %}<p class="exp-blurb">{{ exp.blurb }}</p>{% endif %}
     {% if exp.stack %}<div class="project-stack">{{ exp.stack }}</div>{% endif %}
   </li>
 {% endfor %}

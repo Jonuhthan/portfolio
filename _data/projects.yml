@@ -1,34 +1,35 @@
 - name: LyricLab
-  description: Next.js, Tailwind CSS, Supabase, Google Gemini API, and ElevenLabs karaoke platform with AI-powered lyric remixing and explicit content moderation for children. Features an audio pipeline for lyric transformation, voice generation, and instrumental separation, plus real-time collaborative karaoke rooms via WebSockets.
-  date: February 2026
+  dates: Feb 2026
+  stack: Next.js · Tailwind CSS · Supabase · Google Gemini API · ElevenLabs
+  blurb: Karaoke platform with AI-powered lyric remixing and explicit content moderation for children, featuring a lyric transformation/voice generation audio pipeline and real-time collaborative rooms via WebSockets
   featured: true
   github: https://github.com/kyle-luong/lyriclab
 
 - name: Calview
-  description: React, Tailwind CSS, Mapbox, FastAPI, and PostgreSQL web application that parses university calendar (.ics) files and generates interactive calendar and map visualizations for student course commute planning. Deployed on a scalable AWS architecture (S3, CloudFront, EC2) with a GitHub Actions CI/CD pipeline.
-  date: March 2025
+  dates: Mar 2025
+  stack: React · Tailwind CSS · Mapbox · FastAPI · PostgreSQL · AWS
+  blurb: Parses university calendar (.ics) files into interactive calendar and map visualizations for student course commute planning, deployed on AWS with a GitHub Actions CI/CD pipeline
   featured: true
-  image: /assets/images/projects/calview.png
   github: https://github.com/kyle-luong/calview
   link: https://calview.me/
 
 - name: RateMate
-  description: Next.js, Pinecone, and Google Gemini web application with query and filter functionality on professor review data and RAG-AI chatbot for personalized suggestions.
+  stack: Next.js · Pinecone · Google Gemini
+  blurb: Query and filter functionality on professor review data with a RAG-AI chatbot for personalized suggestions
   featured: false
-  image: /assets/images/projects/RateMate.png
   github: https://github.com/boffskbob/rate-mate
   link: https://github.com/boffskbob/rate-mate
 
 - name: Movie Picker
-  description: Full-stack application built with Next.js and Express.js to perform CRUD operations on movie catalogs.
+  stack: Next.js · Express.js
+  blurb: Full-stack application to perform CRUD operations on movie catalogs
   featured: false
-  image: /assets/images/projects/MoviePicker.png
   github: https://github.com/Jonuhthan/movie-picker
   link: https://github.com/Jonuhthan/movie-picker
 
 - name: Nothing But Nutrition!
-  description: Flask web application powered by OpenFoodFacts API to scan UPC food item barcodes and return relevant macronutrient/allergen data.
+  stack: Flask · OpenFoodFacts API
+  blurb: Scans UPC food item barcodes and returns relevant macronutrient/allergen data
   featured: false
-  image: /assets/images/projects/NothingButNutrition.png
   github: https://github.com/Jonuhthan/nutrition-tracker-app
   link: https://github.com/Jonuhthan/nutrition-tracker-app
