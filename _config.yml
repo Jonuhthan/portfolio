@@ -1,0 +1,9 @@
+title: Jonathan Lam
+description: A collection of my education, projects, and experiences.
+baseurl: ""
+url: ""
+exclude:
+  - v1/
+  - v2/
+  - node_modules/
+  - vendor/
