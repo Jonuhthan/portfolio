@@ -26,7 +26,6 @@ body {
     background: var(--color-bg);
     color: var(--color-text);
     line-height: 1.6;
-    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 a {
@@ -74,6 +73,11 @@ a:hover {
 
 .site-nav a:hover {
     color: var(--color-text);
+}
+
+.site-nav a.active {
+    color: var(--color-text);
+    font-weight: 600;
 }
 
 #theme-toggle {
