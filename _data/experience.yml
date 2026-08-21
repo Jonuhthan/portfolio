@@ -1,0 +1,29 @@
+- title: Computing Support Intern
+  company: University of Virginia Computer Science Department
+  location: Charlottesville, VA
+  date: September 2024 - Present
+  image: /assets/images/experience/uva_cs.png
+  bullets:
+    - Mounted, installed, and configured servers and network devices to support research and educational resources for 60+ faculty members and 200+ graduate students
+    - Created and deployed bootable image drives of Ubuntu 22.04.5 LTS across 40+ desktops and servers
+    - Monitored IT support tickets in Jira, troubleshooting technical issues to provide efficient end-user support
+
+- title: Software Engineer Intern
+  company: Capital One
+  location: McLean, VA
+  date: June 2025 - August 2025
+  image: /assets/images/experience/capital_one.png
+  bullets:
+    - Developed a full-stack labor data portal from concept to deployment, automating HR spreadsheet workflows and eliminating manual data entry errors within the Card Tech organization
+    - Implemented 15+ RESTful API endpoints to support database operations, trigger real-time notifications via Slack and Gmail, and integrate with a Jenkins-based CI/CD pipeline
+    - Synced a PostgreSQL RDS backend to Tableau executive dashboards, enabling organization leadership to make data-driven labor decisions
+
+- title: Software Testing Intern
+  company: MicroAutomation
+  location: Centreville, VA
+  date: May 2024 - August 2024
+  image: /assets/images/experience/microautomation.png
+  bullets:
+    - Designed and tested 20+ manual server failover regression cases alongside developers for the OMNI-911 software
+    - Monitored network traffic with Wireshark to validate software features and reduce bandwidth usage by 7%
+    - Maintained existing test documentation in tandem with product managers to streamline SDLC transitions

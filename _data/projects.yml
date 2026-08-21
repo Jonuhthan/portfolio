@@ -1,0 +1,23 @@
+- name: calview
+  description: Vite, FastAPI, PostgreSQL web application hosted on AWS S3, CloudFront, and EC2 to upload and parse .ics calendar files to visualize university student schedules and share with others.
+  image: /assets/images/projects/calview.png
+  github: https://github.com/kyle-luong/calview
+  link: https://calview.me/
+
+- name: RateMate
+  description: Next.js, Pinecone, and Google Gemini web application with query and filter functionality on professor review data and RAG-AI chatbot for personalized suggestions.
+  image: /assets/images/projects/RateMate.png
+  github: https://github.com/boffskbob/rate-mate
+  link: https://github.com/boffskbob/rate-mate
+
+- name: Movie Picker
+  description: Full-stack application built with Next.js and Express.js to perform CRUD operations on movie catalogs.
+  image: /assets/images/projects/MoviePicker.png
+  github: https://github.com/Jonuhthan/movie-picker
+  link: https://github.com/Jonuhthan/movie-picker
+
+- name: Nothing But Nutrition!
+  description: Flask web application powered by OpenFoodFacts API to scan UPC food item barcodes and return relevant macronutrient/allergen data.
+  image: /assets/images/projects/NothingButNutrition.png
+  github: https://github.com/Jonuhthan/nutrition-tracker-app
+  link: https://github.com/Jonuhthan/nutrition-tracker-app
