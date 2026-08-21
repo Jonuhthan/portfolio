@@ -3,11 +3,9 @@
     <span class="project-name">{{ project.name }}</span>
     {% if project.dates %}<span class="exp-dates">{{ project.dates }}</span>{% endif %}
   </div>
-  {% if project.blurb %}<p class="exp-blurb">{{ project.blurb }}</p>{% endif %}
-  {% if project.stack %}<div class="project-stack">{{ project.stack }}</div>{% endif %}
-  {% if project.github %}
-  <div class="project-card__links">
-    <a href="{{ project.github }}" target="_blank" rel="noopener" aria-label="{{ project.name }} on GitHub">{% include icon.html name="github" %}</a>
+  <div class="project-blurb-row">
+    {% if project.blurb %}<p class="exp-blurb">{{ project.blurb }}</p>{% endif %}
+    {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener" aria-label="{{ project.name }} on GitHub">{% include icon.html name="github" %}</a>{% endif %}
   </div>
-  {% endif %}
+  {% if project.stack %}<div class="project-stack">{{ project.stack }}</div>{% endif %}
 </li>

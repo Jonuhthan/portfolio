@@ -10,4 +10,4 @@ I'm a computer science student at the University of Virginia (BA in Computer Sci
 
 This site is built with [Jekyll](https://jekyllrb.com/), plain HTML/CSS/JavaScript (no framework), and the [Inter](https://fonts.google.com/specimen/Inter) typeface via Google Fonts.
 
-Big thanks to [Kyle Luong](https://kyle-luong.github.io/) for the portfolio inspiration.
+Shoutout to [Kyle Luong](https://kyle-luong.github.io/) for the site inspiration :)
