@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: Experience
 permalink: /experience/
 ---
-
-## Experience
 
 <ul class="other-projects">
 {% for exp in site.data.experience %}

@@ -123,16 +123,21 @@ main.wrap {
 
 .hero {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
 }
 
 .hero img {
-    width: 160px;
-    height: 160px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 12px;
+}
+
+.hero-text {
+    max-width: 560px;
 }
 
 .hero-text h1 {
@@ -260,11 +265,6 @@ main.wrap {
 }
 
 @media (max-width: 600px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .project-card {
         flex-direction: column;
     }
