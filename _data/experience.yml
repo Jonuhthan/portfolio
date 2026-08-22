@@ -1,0 +1,47 @@
+- title: Undergraduate Research Assistant
+  org: UVA Link Lab + Floodwatch
+  dates: May 2026 – Present
+  location: Charlottesville, VA
+  blurb: Real-time geospatial visualizations & modeling for flood detection.
+  stack:
+  org_url: https://engineering.virginia.edu/labs-groups/link-lab
+
+- title: Undergraduate Teaching Assistant
+  org: University of Virginia Computer Science Department
+  dates: May 2026 – Present
+  location: Charlottesville, VA
+  blurb: "CS 3250: Software Testing"
+  stack: 
+  org_url: https://www.cs.virginia.edu/
+
+- title: Computing Support Intern
+  org: University of Virginia Computer Science Department
+  dates: Sep 2024 – Present
+  location: Charlottesville, VA
+  blurb: Network device configuration/installation for UVA CS department professors and graduate students.
+  stack: Bash · Apptainer · Linux
+  org_url: https://www.cs.virginia.edu/
+
+- title: Software Engineer Intern
+  org: Capital One
+  dates: Jun 2026 – Aug 2026
+  location: New York, NY
+  blurb: Full-stack decision dispute engine for corporate agentic AI governance within Cyber IAM.
+  stack: TypeScript · AWS Lambda · Spec-driven Development (SDD) · Jenkins
+  org_url: https://www.capitalone.com/
+
+- title: Software Engineer Intern
+  org: Capital One
+  dates: Jun 2025 – Aug 2025
+  location: McLean, VA
+  blurb: Full-stack labor data portal automating HR spreadsheet workflows within the Card Tech organization.
+  stack: PostgreSQL · Snowflake · Tableau · Jenkins
+  org_url: https://www.capitalone.com/
+
+- title: Software Testing Intern
+  org: MicroAutomation
+  dates: May 2024 – Aug 2024
+  location: Centreville, VA
+  blurb: Manual regression testing and software documentation maintenance for the OMNI-911 call taker software.
+  stack: Wireshark
+  org_url: https://microautomation.com/

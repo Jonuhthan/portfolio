@@ -1,2 +1,9 @@
-title: Jonathan Lam's Portfolio
-description: Collection of Jonathan Lam's education, experiences, and projects
+title: Jonathan Lam
+description: A collection of my education, projects, and experiences.
+baseurl: ""
+url: ""
+exclude:
+  - v1/
+  - v2/
+  - node_modules/
+  - vendor/
