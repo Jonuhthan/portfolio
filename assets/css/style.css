@@ -268,9 +268,20 @@ a {
     padding-bottom: 1.5rem;
 }
 
-.footer-name {
-    font-weight: 600;
-    color: var(--color-text);
+.turtle-buddy {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.turtle-buddy img {
+    display: block;
+    width: 44px;
+    height: auto;
+    image-rendering: pixelated;
 }
 
 .social-links {

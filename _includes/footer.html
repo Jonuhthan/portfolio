@@ -1,6 +1,8 @@
 <footer class="site-footer">
   <div class="wrap">
-    <span class="footer-name">{{ site.title }}</span>
+    <button type="button" id="turtle-buddy" class="turtle-buddy" aria-label="{{ site.title }} (click the turtle)">
+      <img id="turtle-sprite" src="{{ '/assets/images/turtle_sprites/turtle_idle_1.png' | relative_url }}" alt="">
+    </button>
     <div class="social-links">
       <a href="mailto:jonhaolam@gmail.com" aria-label="Email">{% include icon.html name="mail" %}</a>
       <a href="https://github.com/Jonuhthan" target="_blank" rel="noopener" aria-label="GitHub">{% include icon.html name="github" %}</a>
