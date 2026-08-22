@@ -4,6 +4,7 @@
   blurb: AI-powered karaoke platform with real-time collaborative rooms.
   featured: true
   github: https://github.com/kyle-luong/lyriclab
+  image: /assets/images/lyriclab.png
 
 - name: Calview
   dates: Mar 2025
@@ -11,20 +12,24 @@
   blurb: Turns university .ics calendars into interactive commute maps.
   featured: true
   github: https://github.com/kyle-luong/calview
+  image: /assets/images/calview.png
 
 - name: RateMate
+  dates: Aug 2024
   stack: Next.js · Pinecone · Google Gemini
   blurb: RAG-AI chatbot for personalized professor review suggestions.
   featured: false
   github: https://github.com/boffskbob/rate-mate
 
 - name: Movie Picker
+  dates: Jul 2024
   stack: Next.js · Express.js
   blurb: Full-stack CRUD app for movie catalogs.
   featured: false
   github: https://github.com/Jonuhthan/movie-picker
 
 - name: Nothing But Nutrition!
+  dates: Jun 2024
   stack: Flask · OpenFoodFacts API
   blurb: Scans UPC barcodes for macronutrient and allergen data.
   featured: false
