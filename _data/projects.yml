@@ -9,7 +9,7 @@
 - name: Calview
   dates: Mar 2025
   stack: React · Tailwind CSS · Mapbox · FastAPI · PostgreSQL · AWS
-  blurb: Turns university .ics calendars into interactive commute maps.
+  blurb: Convert university .ics calendars into interactive commute maps.
   featured: true
   github: https://github.com/kyle-luong/calview
   image: /assets/images/calview.png
