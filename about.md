@@ -11,7 +11,7 @@ I enjoy developing sustainable, long-term solutions for real-world problems with
 Outside of my career, I love to stay active playing sports like soccer, table tennis, and rock climbing, as well as hiking outdoors (I recommend Old Rag in Shenandoah; difficult but rewarding). I also enjoy aquascaping, which is a like a form of fishtank gardening.
 
 <div class="about-footer" markdown="1">
-This site was built with [Jekyll](https://jekyllrb.com/), HTML, CSS, & JS
+This site was built with jekyll, markdown, HTML, CSS, & JS
 
 Shoutout to [Kyle Luong](https://kyle-luong.github.io/) for the site inspiration ^_^
 </div>
