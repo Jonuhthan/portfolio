@@ -4,10 +4,14 @@ title: About
 permalink: /about/
 ---
 
-I'm a computer science student at the University of Virginia (BA in Computer Science, Minor in Data Science & Business, GPA 4.0) passionate about software engineering, data science, and cloud computing. I love building applications that solve real-world problems and improve people's daily lives.
+I'm a fourth-year computer science student at the University of Virginia. My time in undergrad in coursework, hackathons, and internships have enabled me to develop a passion for software engineering, data science, and cloud comptuing.
 
-## Built With
+I enjoy developing sustainable, long-term solutions for real-world problems with others, and hope to continue doing so post-grad. Please feel free to reach out; I'd love to collaborate on new project ideas, discuss full-time job opportunities, or just have conversations about computer science!
 
-This site is built with [Jekyll](https://jekyllrb.com/), plain HTML/CSS/JavaScript (no framework), and the [Inter](https://fonts.google.com/specimen/Inter) typeface via Google Fonts.
+Outside of my career, I love to stay active playing sports like soccer, table tennis, and rock climbing, as well as hiking outdoors (I recommend Old Rag in Shenandoah; difficult but rewarding). I also enjoy aquascaping, which is a like a form of fishtank gardening.
 
-Shoutout to [Kyle Luong](https://kyle-luong.github.io/) for the site inspiration :)
+<div class="about-footer" markdown="1">
+This site was built with [Jekyll](https://jekyllrb.com/), HTML, CSS, & JS
+
+Shoutout to [Kyle Luong](https://kyle-luong.github.io/) for the site inspiration ^_^
+</div>
