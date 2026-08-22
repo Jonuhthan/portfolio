@@ -1,6 +1,6 @@
-# portfolio
+# jonuhthan.github.io
 
-This is a Jekyll project for my portfolio website.
+This is a Jekyll project for my portfolio.
 
 ## Local setup
 
